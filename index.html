@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <link rel="shortcut icon" href="images/nextWaveLogo.png" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <script src="language.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>NextWave Internet</title>
+
+    <!-- Google Fonts // Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbarTop">
+                <div class="navTopLeft">
+                    <div class="navPhoneOne">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>0800 4248 8022</span>
+                    </div>
+                    <div class="navPhoneTwo">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>(75) 8420-3871</span>
+                    </div>
+                </div>
+                <div class="navTopRight">
+                    <button data-lang="customerArea" id="login" class="login" onclick="location.href='#clientArea'">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="text">Área do cliente</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="navbarBottom">
+                <div class="navBottomLeft">
+                    <i class="fa-solid fa-wifi"></i>
+                    <span onclick="location.href='#'">NextWave</span>
+                </div>
+
+                <div id="burguer" class="burguer" onclick="switchMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="navBottomRight">
+                    <a href="#plans" data-lang="plans">Planos</a>
+                    <a href="#vantages" data-lang="vantages">Vantagens</a>
+                    <a href="#coverage" data-lang="coverage">Cobertura</a>
+                    <a href="#doubts" data-lang="doubts">Dúvidas</a>
+                    <a href="#contact" data-lang="contact">Contato</a>
+                    <button data-lang="subscribe" id="plansBtn" class="plansBtn" onclick="location.href='#plans'">Assine
+                        já</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="containerOne">
+            <div class="gridC-one">
+                <h3 data-lang="fibraOptica">Fibra óptica 100% até sua casa</h3>
+                <h1 data-lang="internetUltra">Internet ultra rápida para conectar <span>tudo</span> na sua casa.</h1>
+                <p data-lang="planosAlta">Planos de alta velocidade com estabilidade, suporte 24h e Wi-Fi potente para
+                    você jogar, assistir e trabalhar sem travar.</p>
+                <div class="buttonsPlans">
+                    <button data-lang="verPlanos" id="plansOne" class="plansOne" onclick="location.href='#plans'">Ver
+                        Planos</button>
+                    <button data-lang="falarConsultor" id="plansTwo" class="plansTwo"
+                        onclick="location.href='#contact'">Falar com consultor</button>
+                </div>
+                <div class="vantages">
+                    <div>
+                        <i class="fa-solid fa-bolt"></i>
+                        <p data-lang="instalacaoRapida">Instalação rápida</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-headset"></i>
+                        <p data-lang="suporte">Suporte 24/7</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <p data-lang="conexaoEstavel">Conexão estável</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gridC-Two">
+                <div class="gridC-TwoBox">
+                    <h2 data-lang="simulePlano">Simule seu plano</h2>
+                    <p data-lang="informeDados">Informe alguns dados e veja a melhor opção para você.</p>
+
+                    <div class="form">
+                        <label data-lang="twoCep">CEP</label>
+                        <input type="text" maxlength="9" placeholder="00000-000">
+
+                        <label data-lang="tipoUso">Tipo de uso</label>
+                        <select>
+                            <option data-lang="residencial" value="">Residencial</option>
+                            <option data-lang="homeOffice" value="">Trabalho / Home office</option>
+                            <option data-lang="gamer" value="">Gamer</option>
+                            <option data-lang="empresa" value="">Empresa</option>
+                        </select>
+
+                        <label data-lang="quantasPessoas">Quantas pessoas usam a internet?</label>
+                        <select>
+                            <option data-lang="umaDuasPessoas" value="">1 a 2 pessoas</option>
+                            <option data-lang="tresQuatroPessoas" value="">3 a 4 pessoas</option>
+                            <option data-lang="cincoOuMais" value="">5 ou mais pessoas</option>
+                        </select>
+
+                        <button data-lang="verRecomendacao" type="button"
+                            onclick="document.getElementById('plans').scrollIntoView({behavior: 'smooth', block: 'start'})"
+                            id="#modifyBorder">Ver recomendação</button>
+                        <div class="security">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                            <p data-lang="dadosSeguros">Seus dados estão seguros.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="containerTwo" id="plans">
+            <div class="containerTwoTop">
+                <span data-lang="internetPlans">Planos de internet</span>
+                <h2 data-lang="chooseSpeed">Escolha a velocidade ideal para você</h2>
+                <p data-lang="plansSubtitle">Todos os planos com Wi-Fi incluso, instalação rápida e suporte
+                    especializado.</p>
+            </div>
+
+            <div class="containerTwoGrid">
+
+                <!-- PLANO 1 -->
+                <div class="conTwoGrid">
+                    <span class="topPlans" data-lang="planEssential">Essencial</span>
+                    <h3 data-lang="plan300">300 Mega</h3>
+
+                    <p data-lang="desc300">
+                        Perfeito para quem navega, assiste streaming em Full HD e usa redes sociais.
+                    </p>
+
+                    <span class="price">
+                        <span class="month">R$ </span>89<span class="month">,90/mês</span>
+                    </span>
+
+                    <div class="description">
+                        <div>
+                            <i class="fa fa-check"></i>
+                            <p data-lang="wifiIncluded">Wi-Fi incluso</p>
+                        </div>
+                        <div>
+                            <i class="fa fa-check"></i>
+                            <p data-lang="ftth">Fibra até a residência</p>
+                        </div>
+                        <div>
+                            <i class="fa fa-check"></i>
+                            <p data-lang="noDataCap">Sem franquia de dados</p>
+                        </div>
+                    </div>
+
+                    <button class="btnPursche" data-lang="subscribePlan">Assinar plano</button>
+                </div>
+
+                <!-- PLANO 2 -->
+                <div class="conTwoGrid" id="modifyBorder">
+                    <span class="topPlans modify" data-lang="recommended">Recomendado</span>
+                    <h3 data-lang="plan500">500 Mega</h3>
+
+                    <p data-lang="desc500">
+                        Para quem faz de tudo: streaming 4K, reuniões online e games.
+                    </p>
+
+                    <span class="price">
+                        <span class="month">R$ </span>119<span class="month">,90/mês</span>
+                    </span>
+
+                    <div class="description">
+                        <div>
+                            <i class="fa fa-check"></i>
+                            <p data-lang="dualBandWifi">Wi-Fi Dual Band incluso</p>
+                        </div>
+                        <div>
+                            <i class="fa fa-check"></i>
+                            <p data-lang="freeInstall">Instalação grátis*</p>
+                        </div>
+                        <div>
+                            <i class="fa fa-check"></i>
+                            <p data-lang="prioritySupport">Suporte prioritário</p>
+                        </div>
+                    </div>
+
+                    <button class="btnPursche" id="btnModify" data-lang="subscribePlan">Assinar plano</button>
+
+                    <p class="obs" data-lang="obsCondition">
+                        *Consulte condições na sua região.
+                    </p>
+                </div>
+
+                <!-- PLANO 3 -->
+                <div class="conTwoGrid">
+                    <span class="topPlans" data-lang="planPower">Power</span>
+                    <h3 data-lang="plan1000">1 Giga</h3>
+
+                    <p data-lang="desc1000">
+                        Altíssimo desempenho para gamers, criadores de conteúdo e empresas.
+                    </p>
+
+                    <span class="price">
+                        <span class="month">R$ </span>169<span class="month">,90/mês</span>
+                    </span>
+
+                    <div class="description">
+                        <div>
+                            <i class="fa fa-check"></i>
+                            <p data-lang="highPerfRouter">Roteador de alta performance</p>
+                        </div>
+                        <div>
+                            <i class="fa fa-check"></i>
+                            <p data-lang="vipSupport">Suporte VIP</p>
+                        </div>
+                        <div>
+                            <i class="fa fa-check"></i>
+                            <p data-lang="multipleDevices">Ideal para múltiplos dispositivos</p>
+                        </div>
+                    </div>
+
+                    <button class="btnPursche" data-lang="subscribePlan">Assinar plano</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="containerThree" id="vantages">
+            <div class="threeTitle"><span data-lang="whyNextwave">Por que a NextWave?</span>
+                <h2 data-lang="moreThanSpeed">Mais do que velocidade, experiência</h2>
+            </div>
+            <div class="threeGrid">
+                <div class="tGrid"> <i class="fa-solid fa-gauge-high"></i>
+                    <h3 class="h3ThreeMod" data-lang="highPerformance">Alta Performance</h3>
+                    <p data-lang="highPerformanceDesc">Fibra óptica de ponta para garantir baixíssima latência e estabilidade mesmo com vários
+                        dispositivos conectados.</p>
+                </div>
+                <div class="tGrid"> <i class="fa-solid fa-house-signal"></i>
+                    <h3 class="h3ThreeMod" data-lang="wifiWholeHouse">Wi-Fi em toda a casa</h3>
+                    <p data-lang="wifiWholeHouseDesc">Roteadores modernos e opção de repetidores para levar o sinal a todos os cômodos.</p>
+                </div>
+                <div class="tGrid"> <i class="fa-solid fa-clock"></i>
+                    <h3 class="h3ThreeMod" data-lang="support24h">Suporte 24h</h3>
+                    <p data-lang="support24hDesc">Atendimento humano sempre que você precisar, por telefone, WhatsApp ou chat.</p>
+                </div>
+                <div class="tGrid"> <i class="fa-solid fa-file-circle-check"></i>
+                    <h3 class="h3ThreeMod" data-lang="noFinePrint">Sem letras miúdas</h3>
+                    <p data-lang="noFinePrintDesc">Contratos claros, sem franquia de dados e sem surpresas na fatura.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="containerFour" id="coverage">
+            <div class="containerFLeft"><span data-lang="coverageTitle">Cobertura</span>
+                <h2 data-lang="coverageHeadline">Estamos chegando cada vez mais perto de você</h2>
+                <p data-lang="coverageDesc">Presente nas principais regiões da cidade e em constante expansão. Consulte a disponibilidade no seu
+                    endereço e veja os planos especiais da sua área.</p>
+                <div class="location"> 
+                    <span><i class="fa-solid fa-map-marker"></i>Centro</span>
+                    <span><i class="fa-solid fa-map-marker"></i>Zona Norte</span>
+                    <span><i class="fa-solid fa-map-marker"></i>Zona Sul</span>
+                    <span><i class="fa-solid fa-map-marker"></i>Zona Leste</span>
+                    <span><i class="fa-solid fa-map-marker"></i>Zona Oeste</span>
+                </div>
+            </div>
+            <div class="containerFRight">
+                <form>
+                    <h2 data-lang="checkAvailabilityTitle">Verificar disponibilidade</h2>
+                    <p data-lang="checkAvailabilityDesc">Digite seu CEP e veja se já temos cobertura ra sua região.</p> <label data-lang="labelCep">CEP</label> <input
+                        type="text" maxlength="9" placeholder="00000-000"> <label data-lang="labelCity">Cidade</label> <input type="text"
+                        maxlength="20" placeholder="Sua cidade"> <button data-lang="btnCheckCoverage">Verificar cobertura</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="faq" id="doubts">
+            <div class="faqTop"> 
+                <span data-lang="faqSubtitle">Dúvidas frequentes</span>
+                <h2 data-lang="faqTitle">Perguntas e respostas</h2>
+            </div>
+            <div class="faqGrid" id="faqGrid">
+                <div>
+                    <h3 data-lang="faqQ1" class="faqTitle">Qual o prazo para instalação?</h3>
+                    <p data-lang="faqA1" class="pShow">Após a confirmação do cadastro, a instalação costuma ocorrer em até 48 horas, dependendo da disponibilidade de agenda na sua região.</p>
+                </div>
+                <div>
+                    <h3 data-lang="faqQ2" class="faqTitle">Existe fidelidade?</h3>
+                    <p data-lang="faqA2" class="pShow">Temos opções com e sem fidelidade. Nos planos com fidelidade, você ganha benefícios como instalação grátis e desconto na mensalidade.</p>
+                </div>
+                <div>
+                    <h3 data-lang="faqQ3" class="faqTitle">A internet é realmente fibra óptica?</h3>
+                    <p data-lang="faqA3" class="pShow">Sim! Trabalhamos com tecnologia FTTH (Fiber To The Home), levando a fibra óptica diretamente até a sua residência.</p>
+                </div>
+                <div>
+                    <h3 data-lang="faqQ4" class="faqTitle">Posso migrar de outro provedor?</h3>
+                    <p data-lang="faqA4" class="pShow">Claro! Nossos consultores ajudam você em todo o processo de migração para que você não fique sem conexão.</p>
+                </div>
+            </div>
+
+            <div class="contact" id="contact">
+                <div class="contactLeft">
+                    <span data-lang="contactSubtitle">fale com a gente</span>
+                    <h2 data-lang="contactTitle">Assine agora ou tire suas dúvidas</h2>
+                    <p data-lang="contactText">Preencha o formulário ao lado ou fale direto pelo WhatsApp. Nossa equipe está pronta para te
+                        atender.</p>
+                    <div class="contactBottom">
+                        <div>
+                            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                            <p>(75) 8420-3871</p>
+                        </div>
+                        <div>
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <p>0800 4248 8022</p>
+                        </div>
+                        <div>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <p>contato@nextwave.com.br</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactRight">
+                    <form>
+                        <label data-lang="contactNameLabel">Nome completo</label>
+                        <input type="text" maxlength="30" placeholder="Seu nome">
+
+                        <label data-lang="contactEmailLabel">E-mail</label>
+                        <input type="email" placeholder="voce@gmail.com">
+
+                        <label data-lang="contactPhoneLabel">Telefone</label>
+                        <input type="text" maxlength="12" placeholder="(00) 00000-0000">
+
+                        <label data-lang="contactMessageLabel">Mensagem</label>
+                        <textarea placeholder="Conte um pouco sobre o que você precisa..."></textarea>
+
+                        <button data-lang="contactButton">Enviar mensagem</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="clientArea" id="clientArea">
+                <h2 data-lang="clientAreaTitle">Área do cliente</h2>
+                <p data-lang="clientAreaText">Acesse sua fatura, 2ª via, suporte e muito mais.</p>
+                <button data-lang="clientAreaButton">Entrar na área do cliente</button>
+            </div>
+    </main>
+
+    <footer>
+        <div data-lang="footerRights">© 2025 NextWave Internet. Todos os direitos reservados.</div>
+        <div>🇧🇷</div>
+    </footer>
+    <div class="lang">
+        <button id="btnLang" class="btnLang"></button>
+    </div>
+    <div class="theme">
+        <button id="btnTheme" class="btnTheme"><i class="fa-solid fa-moon"></i></button>
+    </div>
+</body>
+
+</html>
