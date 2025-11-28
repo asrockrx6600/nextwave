@@ -204,6 +204,8 @@ const langData = {
 
 //////////////////////////////////////////////////////////////////////////////////
 
+    
+
 const btnLang = document.getElementById('btnLang');
 let currentLang = localStorage.getItem('lang') || 'pt';
 
@@ -240,17 +242,12 @@ function applyLang(lang) {
     btnLang.textContent = lang === 'pt' ? 'EN' : 'PT';
     localStorage.setItem('lang', lang);
 
-    //
-    document.querySelectorAll('[data-lang-placeholder]').forEach(el => {
-    const key = el.getAttribute('data-lang-placeholder');
-    el.placeholder = langData[currentLang][key];
-});
-
 }
 
 //
 btnLang.addEventListener('click', () => {
     currentLang = currentLang === 'pt' ? 'en' : 'pt';
     applyLang(currentLang);
-
 });
+
+applyLang(currentLang);
