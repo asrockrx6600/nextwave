@@ -26,7 +26,7 @@
     }
 }
 
-:root[data-theme="dark"] {
+:root {
     --body: radial-gradient(circle at top left, #101631 0, #050816 50%, #02030a 100%);
     --bgNav: rgba(6, 9, 23, 0.9);
     --bgNavM: rgba(6, 9, 23, 1);
