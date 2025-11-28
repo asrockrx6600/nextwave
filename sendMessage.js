@@ -24,6 +24,8 @@ form.addEventListener('submit', function(e) {
     const url = `https://wa.me/${number}?text=${txt}`
 
     setTimeout(() => {
+        form.reset()
         window.open(url, '_blank')
+        
     }, 1000);
 });
