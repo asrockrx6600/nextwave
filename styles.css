@@ -961,7 +961,7 @@ body {
 }
 
 .sendMesage {
-    opacity: 1;
+    opacity: 0;
     position: absolute;
     top: 58vh;
     left: 28vh;
@@ -1250,7 +1250,7 @@ footer {
         scroll-margin-top: 150px;
     }
 
-    .sendMesage {
+    .sendMesage.active {
         top: auto;
         left: auto;
         right: 14vh;
