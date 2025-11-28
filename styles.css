@@ -961,7 +961,7 @@ body {
 }
 
 .sendMesage {
-    opacity: 0;
+    opacity: 1;
     position: absolute;
     top: 58vh;
     left: 28vh;
@@ -1248,6 +1248,13 @@ footer {
         height: auto;
         margin: 4rem auto;
         scroll-margin-top: 150px;
+    }
+
+    .sendMesage {
+        top: auto;
+        left: auto;
+        right: 14vh;
+        bottom: 16vh;
     }
 
     .contactLeft span {
