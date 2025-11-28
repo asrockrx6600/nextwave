@@ -904,6 +904,8 @@ body {
     padding: 2rem;
     background-color: var(--cardBg);
     box-shadow: 0 0 5px var(--black);
+    position: relative;
+
 }
 
 .contactRight form {
@@ -956,6 +958,23 @@ body {
 .contactRight button:hover {
     background-color: var(--white);
     color: var(--primary);
+}
+
+.sendMesage {
+    opacity: 0;
+    position: absolute;
+    top: 58vh;
+    left: 28vh;
+    color: rgb(6, 73, 48);
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 888;
+    transition: 400ms ease-in-out;
+}
+
+.sendMesage.active {
+    opacity: 1;
+    transition: opacity 400ms ease-in-out;
 }
 
 .clientArea {

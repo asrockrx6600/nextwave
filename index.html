@@ -11,6 +11,7 @@
 
     <script src="script.js" defer></script>
     <script src="language.js" defer></script>
+    <script src="sendMessage.js" defer></script>
 
     <title>NextWave Internet</title>
 
@@ -333,22 +334,26 @@
                     </div>
                 </div>
                 <div class="contactRight">
-                    <form>
+                    <form id="form">
                         <label data-lang="contactNameLabel">Nome completo</label>
-                        <input type="text" maxlength="30" placeholder="João Silva">
+                        <input type="text" maxlength="50" placeholder="João Silva" required id="name">
 
                         <label data-lang="contactEmailLabel">E-mail</label>
-                        <input type="email" placeholder="name@gmail.com">
+                        <input type="email" placeholder="name@gmail.com" required id="email">
 
                         <label data-lang="contactPhoneLabel">Telefone</label>
                         <input type="text" maxlength="12" placeholder="(00) 00000-0000">
 
                         <label data-lang="contactMessageLabel">Mensagem</label>
-                        <textarea placeholder="[. . .]"></textarea>
+                        <textarea placeholder="[. . .]" id="message"></textarea>
 
-                        <button data-lang="contactButton">
+                        <button type="submit" data-lang="contactButton" id="btnSend">
                             Enviar mensagem
                         </button>
+
+                        <div class="sendMesage" id="msg">
+                            <span>Enviado!</span>
+                        </div>
                     </form>
                 </div>
             </div>
