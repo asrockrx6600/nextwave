@@ -11,7 +11,7 @@ form.addEventListener('submit', function (e) {
     }, 3000);
 })
 
-const number = '7588439555'
+const number = '75981535154'
 form.addEventListener('submit', function(e) {
     e.preventDefault()
 
