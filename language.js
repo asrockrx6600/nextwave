@@ -8,7 +8,7 @@ const langData = {
         contact: 'Contato',
         subscribe: 'Assine já',
         fibraOptica: 'Fibra óptica 100% até sua casa',
-        internetUltra: 'Internet ultra rápida para conectar tudo na sua casa',
+        internetUltra: 'Internet ultra rápida para conectar <span>tudo</span> na sua casa',
         planosAlta: 'Planos de alta velocidade com estabilidade, suporte 24h e Wi-Fi potente para você jogar, assistir e trabalhar sem travar',
         verPlanos: 'Ver planos',
         falarConsultor: 'Falar com consultor',
@@ -109,7 +109,7 @@ const langData = {
         contact: 'Contact',
         subscribe: 'Subscribe',
         fibraOptica: '100% Optical Fiber to your home',
-        internetUltra: 'Ultra-fast internet to connect everything in your home',
+        internetUltra: 'Ultra-fast internet to connect <span>everything</span> in your home',
         planosAlta: 'High-speed plans with stability, 24-hour support and powerful Wi-Fi so you can play, watch and work without freezing',
         verPlanos: 'View plans',
         falarConsultor: 'Speak to consultant',
@@ -204,8 +204,6 @@ const langData = {
 
 //////////////////////////////////////////////////////////////////////////////////
 
-    
-
 const btnLang = document.getElementById('btnLang');
 let currentLang = localStorage.getItem('lang') || 'pt';
 
@@ -235,7 +233,7 @@ function applyLang(lang) {
             return;
         }
 
-        el.textContent = text;
+        el.innerHTML = text;
     });
 
     //
