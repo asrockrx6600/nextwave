@@ -29,36 +29,30 @@ const langData = {
         cincoOuMais: '5 ou mais pessoas',
         verRecomendacao: 'Ver recomendação',
         dadosSeguros: 'Seus dados estão seguros',
-        // Seção de planos - Português
         internetPlans: "Planos de internet",
         chooseSpeed: "Escolha a velocidade ideal para você",
         plansSubtitle: "Todos os planos com Wi-Fi incluso, instalação rápida e suporte especializado.",
-        // Plano Essencial (300 Mega)
         planEssential: "Essencial",
         plan300: "300 Mega",
         desc300: "Perfeito para quem navega, assiste streaming em Full HD e usa redes sociais.",
+        price: 'mês',
         wifiIncluded: "Wi-Fi incluso",
         ftth: "Fibra até a residência",
         noDataCap: "Sem franquia de dados",
-        // Botões
         subscribePlan: "Assinar plano",
-        // Plano Recomendado (500 Mega)
         recommended: "Recomendado",
         plan500: "500 Mega",
         desc500: "Para quem faz de tudo: streaming 4K, reuniões online e games.",
         dualBandWifi: "Wi-Fi Dual Band incluso",
         freeInstall: "Instalação grátis*",
         prioritySupport: "Suporte prioritário",
-        // Observação
         obsCondition: "*Consulte condições na sua região.",
-        // Plano Power (1 Giga)
         planPower: "Power",
         plan1000: "1 Giga",
         desc1000: "Altíssimo desempenho para gamers, criadores de conteúdo e empresas.",
         highPerfRouter: "Roteador de alta performance",
         vipSupport: "Suporte VIP",
         multipleDevices: "Ideal para múltiplos dispositivos",
-        // Seção "Por que a NextWave?"
         whyNextwave: "Por que a NextWave?",
         moreThanSpeed: "Mais do que velocidade, experiência",
         highPerformance: "Alta Performance",
@@ -69,15 +63,9 @@ const langData = {
         support24hDesc: "Atendimento humano sempre que você precisar, por telefone, WhatsApp ou chat.",
         noFinePrint: "Sem letras miúdas",
         noFinePrintDesc: "Contratos claros, sem franquia de dados e sem surpresas na fatura.",
-        // Seção Cobertura
         coverageTitle: "Cobertura",
         coverageHeadline: "Estamos chegando cada vez mais perto de você",
         coverageDesc: "Presente nas principais regiões da cidade e em constante expansão. Consulte a disponibilidade no seu endereço e veja os planos especiais da sua área.",
-        regionCenter: "Centro",
-        regionNorth: "Zona Norte",
-        regionSouth: "Zona Sul",
-        regionEast: "Zona Leste",
-        regionWest: "Zona Oeste",
         checkAvailabilityTitle: "Verificar disponibilidade",
         checkAvailabilityDesc: "Digite seu CEP e veja se já temos cobertura na sua região.",
         labelCep: "CEP",
@@ -91,6 +79,8 @@ const langData = {
         faqA2: "Temos opções com e sem fidelidade. Nos planos com fidelidade, você ganha benefícios como instalação grátis e desconto na mensalidade.",
         faqQ3: "A internet é realmente fibra óptica?",
         faqA3: "Sim! Trabalhamos com tecnologia FTTH (Fiber To The Home), levando a fibra óptica diretamente até a sua residência.",
+        faqQ4: 'Posso migrar de outro provedor?',
+        faqA4: 'Claro! Nossos consultores ajudam você em todo o processo de migração para que você não fique sem conexão.',
         contactSubtitle: "fale com a gente",
         contactTitle: "Assine agora ou tire suas dúvidas",
         contactText: "Preencha o formulário ao lado ou fale direto pelo WhatsApp. Nossa equipe está pronta para te atender.",
@@ -101,6 +91,7 @@ const langData = {
         contactPhoneLabel: "Telefone",
         contactPhonePlaceholder: "(00) 00000-0000",
         contactMessageLabel: "Mensagem",
+        info: 'Conte um pouco sobre o que você precisa...',
         contactMessagePlaceholder: "Conte um pouco sobre o que você precisa...",
         contactButton: "Enviar mensagem",
         clientAreaTitle: "Área do cliente",
@@ -139,36 +130,30 @@ const langData = {
         cincoOuMais: '5 or more people',
         verRecomendacao: 'See recommendation',
         dadosSeguros: 'Your data is safe',
-        // Seção de planos - Tradução EN
         internetPlans: "Internet plans",
         chooseSpeed: "Choose the ideal speed for you",
         plansSubtitle: "All plans include Wi-Fi, fast installation, and specialized support.",
-        // Plano Essencial (300 Mega)
         planEssential: "Essential",
         plan300: "300 Mbps",
         desc300: "Perfect for browsing, Full HD streaming, and social networks.",
+        price: 'month',
         wifiIncluded: "Wi-Fi included",
         ftth: "Fiber to the home",
         noDataCap: "No data cap",
-        // Botões
         subscribePlan: "Subscribe plan",
-        // Plano Recomendado (500 Mega)
         recommended: "Recommended",
         plan500: "500 Mbps",
         desc500: "Great for everything: 4K streaming, online meetings, and gaming.",
         dualBandWifi: "Dual Band Wi-Fi included",
         freeInstall: "Free installation*",
         prioritySupport: "Priority support",
-        // Observação
         obsCondition: "*Check availability in your region.",
-        // Plano Power (1 Giga)
         planPower: "Power",
         plan1000: "1 Gigabit",
         desc1000: "High performance for gamers, content creators, and businesses.",
         highPerfRouter: "High-performance router",
         vipSupport: "VIP support",
         multipleDevices: "Ideal for multiple devices",
-        // Section "Why NextWave?"
         whyNextwave: "Why NextWave?",
         moreThanSpeed: "More than speed, an experience",
         highPerformance: "High Performance",
@@ -179,15 +164,9 @@ const langData = {
         support24hDesc: "Human support whenever you need it, via phone, WhatsApp, or chat.",
         noFinePrint: "No fine print",
         noFinePrintDesc: "Clear contracts, no data caps, and no surprises on your bill.",
-        // Coverage Section
         coverageTitle: "Coverage",
         coverageHeadline: "We are getting closer to you",
         coverageDesc: "Present in the main regions of the city and constantly expanding. Check availability at your address and see the special plans for your area.",
-        regionCenter: "Downtown",
-        regionNorth: "North Zone",
-        regionSouth: "South Zone",
-        regionEast: "East Zone",
-        regionWest: "West Zone",
         checkAvailabilityTitle: "Check availability",
         checkAvailabilityDesc: "Enter your ZIP code and see if we already cover your area.",
         labelCep: "ZIP code",
@@ -213,6 +192,7 @@ const langData = {
         contactPhoneLabel: "Phone",
         contactPhonePlaceholder: "(00) 00000-0000",
         contactMessageLabel: "Message",
+        info: 'Tell us a little about what you need...',
         contactMessagePlaceholder: "Tell us a bit about what you need...",
         contactButton: "Send message",
         clientAreaTitle: "Customer area",
@@ -221,12 +201,13 @@ const langData = {
         footerRights: "© 2025 NextWave Internet. All rights reserved."
     }
 };
-/////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////////
 
 const btnLang = document.getElementById('btnLang');
 let currentLang = localStorage.getItem('lang') || 'pt';
 
-//Função que aplica a tradução
+// FUNÇÃO QUE APLICA A TRADUÇÃO //
 function applyLang(lang) {
 
     document.querySelectorAll('[data-lang]').forEach(el => {
@@ -234,38 +215,42 @@ function applyLang(lang) {
         const text = langData[lang][key];
 
         //
-        const span = el.querySelector('.text');
+        let span = el.querySelector('.text');
+
         if (span) {
             span.textContent = text;
             return;
         }
 
+        //
         const hasIcon = el.querySelector('i');
         if (hasIcon) {
-            const newSpan = document.createElement('span');
-            newSpan.classList.add('text');
-            newSpan.textContent = text;
-            el.appendChild(newSpan);
+            
+            span = document.createElement('span');
+            span.classList.add('text');
+            span.textContent = text;
+            el.appendChild(span);
             return;
         }
 
         el.textContent = text;
     });
 
+    //
     btnLang.textContent = lang === 'pt' ? 'EN' : 'PT';
     localStorage.setItem('lang', lang);
+
+    //
+    document.querySelectorAll('[data-lang-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-lang-placeholder');
+    el.placeholder = langData[currentLang][key];
+});
+
 }
-//Botão de troca
+
+//
 btnLang.addEventListener('click', () => {
     currentLang = currentLang === 'pt' ? 'en' : 'pt';
     applyLang(currentLang);
 
 });
-
-document.querySelectorAll('[data-lang-placeholder').forEach(el => {
-    const key = el.getAttribute('data-lang-placeholder');
-    el.placeholder = langData[lang][key];
-});
-
-//Aplica idioma salvo ao carregar
-applyLang(currentLang);

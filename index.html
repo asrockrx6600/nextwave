@@ -5,21 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google" content="notranslate">
+
     <link rel="shortcut icon" href="images/nextWaveLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+
     <script src="script.js" defer></script>
     <script src="language.js" defer></script>
-    <link rel="stylesheet" href="styles.css">
+
     <title>NextWave Internet</title>
 
     <!-- Google Fonts // Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -62,8 +61,9 @@
                     <a href="#coverage" data-lang="coverage">Cobertura</a>
                     <a href="#doubts" data-lang="doubts">Dúvidas</a>
                     <a href="#contact" data-lang="contact">Contato</a>
-                    <button data-lang="subscribe" id="plansBtn" class="plansBtn" onclick="location.href='#plans'">Assine
-                        já</button>
+                    <button data-lang="subscribe" id="plansBtn" class="plansBtn" onclick="location.href='#plans'">
+                        Assine já
+                    </button>
                 </div>
             </div>
         </nav>
@@ -74,13 +74,14 @@
             <div class="gridC-one">
                 <h3 data-lang="fibraOptica">Fibra óptica 100% até sua casa</h3>
                 <h1 data-lang="internetUltra">Internet ultra rápida para conectar <span>tudo</span> na sua casa.</h1>
-                <p data-lang="planosAlta">Planos de alta velocidade com estabilidade, suporte 24h e Wi-Fi potente para
-                    você jogar, assistir e trabalhar sem travar.</p>
+                <p data-lang="planosAlta">Planos de alta velocidade com estabilidade, suporte 24h e Wi-Fi potente para você jogar, assistir e trabalhar sem travar.</p>
                 <div class="buttonsPlans">
-                    <button data-lang="verPlanos" id="plansOne" class="plansOne" onclick="location.href='#plans'">Ver
-                        Planos</button>
-                    <button data-lang="falarConsultor" id="plansTwo" class="plansTwo"
-                        onclick="location.href='#contact'">Falar com consultor</button>
+                    <button data-lang="verPlanos" id="plansOne" class="plansOne" onclick="location.href='#plans'">
+                        Ver Planos
+                    </button>
+                    <button data-lang="falarConsultor" id="plansTwo" class="plansTwo" onclick="location.href='#contact'">
+                        Falar com consultor
+                    </button>
                 </div>
                 <div class="vantages">
                     <div>
@@ -121,9 +122,9 @@
                             <option data-lang="cincoOuMais" value="">5 ou mais pessoas</option>
                         </select>
 
-                        <button data-lang="verRecomendacao" type="button"
-                            onclick="document.getElementById('plans').scrollIntoView({behavior: 'smooth', block: 'start'})"
-                            id="#modifyBorder">Ver recomendação</button>
+                        <button data-lang="verRecomendacao" type="button" onclick="document.getElementById('plans').scrollIntoView({behavior: 'smooth', block: 'start'})" id="#modifyBorder">
+                            Ver recomendação
+                        </button>
                         <div class="security">
                             <i class="fa fa-lock" aria-hidden="true"></i>
                             <p data-lang="dadosSeguros">Seus dados estão seguros.</p>
@@ -137,23 +138,19 @@
             <div class="containerTwoTop">
                 <span data-lang="internetPlans">Planos de internet</span>
                 <h2 data-lang="chooseSpeed">Escolha a velocidade ideal para você</h2>
-                <p data-lang="plansSubtitle">Todos os planos com Wi-Fi incluso, instalação rápida e suporte
-                    especializado.</p>
+                <p data-lang="plansSubtitle">Todos os planos com Wi-Fi incluso, instalação rápida e suporte especializado.</p>
             </div>
 
             <div class="containerTwoGrid">
 
-                <!-- PLANO 1 -->
                 <div class="conTwoGrid">
                     <span class="topPlans" data-lang="planEssential">Essencial</span>
                     <h3 data-lang="plan300">300 Mega</h3>
 
-                    <p data-lang="desc300">
-                        Perfeito para quem navega, assiste streaming em Full HD e usa redes sociais.
-                    </p>
+                    <p data-lang="desc300"> Perfeito para quem navega, assiste streaming em Full HD e usa redes sociais.</p>
 
                     <span class="price">
-                        <span class="month">R$ </span>89<span class="month">,90/mês</span>
+                        <span class="month">R$ </span>89<span class="month">,90/ <span data-lang="price">mês</span></span>
                     </span>
 
                     <div class="description">
@@ -171,20 +168,19 @@
                         </div>
                     </div>
 
-                    <button class="btnPursche" data-lang="subscribePlan">Assinar plano</button>
+                    <button class="btnPursche" data-lang="subscribePlan">
+                        Assinar plano
+                    </button>
                 </div>
 
-                <!-- PLANO 2 -->
                 <div class="conTwoGrid" id="modifyBorder">
                     <span class="topPlans modify" data-lang="recommended">Recomendado</span>
                     <h3 data-lang="plan500">500 Mega</h3>
 
-                    <p data-lang="desc500">
-                        Para quem faz de tudo: streaming 4K, reuniões online e games.
-                    </p>
+                    <p data-lang="desc500">Para quem faz de tudo: streaming 4K, reuniões online e games.</p>
 
                     <span class="price">
-                        <span class="month">R$ </span>119<span class="month">,90/mês</span>
+                        <span class="month">R$ </span>119<span class="month">,90/<span data-lang="price">mês</span></span>
                     </span>
 
                     <div class="description">
@@ -202,24 +198,21 @@
                         </div>
                     </div>
 
-                    <button class="btnPursche" id="btnModify" data-lang="subscribePlan">Assinar plano</button>
+                    <button class="btnPursche" id="btnModify" data-lang="subscribePlan">
+                        Assinar plano
+                    </button>
 
-                    <p class="obs" data-lang="obsCondition">
-                        *Consulte condições na sua região.
-                    </p>
+                    <p class="obs" data-lang="obsCondition">*Consulte condições na sua região.</p>
                 </div>
 
-                <!-- PLANO 3 -->
                 <div class="conTwoGrid">
                     <span class="topPlans" data-lang="planPower">Power</span>
                     <h3 data-lang="plan1000">1 Giga</h3>
 
-                    <p data-lang="desc1000">
-                        Altíssimo desempenho para gamers, criadores de conteúdo e empresas.
-                    </p>
+                    <p data-lang="desc1000">Altíssimo desempenho para gamers, criadores de conteúdo e empresas.</p>
 
                     <span class="price">
-                        <span class="month">R$ </span>169<span class="month">,90/mês</span>
+                        <span class="month">R$ </span>169<span class="month">,90/<span data-lang="price">mês</span></span>
                     </span>
 
                     <div class="description">
@@ -237,7 +230,9 @@
                         </div>
                     </div>
 
-                    <button class="btnPursche" data-lang="subscribePlan">Assinar plano</button>
+                    <button class="btnPursche" data-lang="subscribePlan">
+                        Assinar plano
+                    </button>
                 </div>
             </div>
         </div>
@@ -249,8 +244,7 @@
             <div class="threeGrid">
                 <div class="tGrid"> <i class="fa-solid fa-gauge-high"></i>
                     <h3 class="h3ThreeMod" data-lang="highPerformance">Alta Performance</h3>
-                    <p data-lang="highPerformanceDesc">Fibra óptica de ponta para garantir baixíssima latência e estabilidade mesmo com vários
-                        dispositivos conectados.</p>
+                    <p data-lang="highPerformanceDesc">Fibra óptica de ponta para garantir baixíssima latência e estabilidade mesmo com vários dispositivos conectados.</p>
                 </div>
                 <div class="tGrid"> <i class="fa-solid fa-house-signal"></i>
                     <h3 class="h3ThreeMod" data-lang="wifiWholeHouse">Wi-Fi em toda a casa</h3>
@@ -270,22 +264,26 @@
         <div class="containerFour" id="coverage">
             <div class="containerFLeft"><span data-lang="coverageTitle">Cobertura</span>
                 <h2 data-lang="coverageHeadline">Estamos chegando cada vez mais perto de você</h2>
-                <p data-lang="coverageDesc">Presente nas principais regiões da cidade e em constante expansão. Consulte a disponibilidade no seu
-                    endereço e veja os planos especiais da sua área.</p>
+                <p data-lang="coverageDesc">Presente nas principais regiões da cidade e em constante expansão. Consulte a disponibilidade no seu endereço e veja os planos especiais da sua área.</p>
                 <div class="location"> 
-                    <span><i class="fa-solid fa-map-marker"></i>Centro</span>
-                    <span><i class="fa-solid fa-map-marker"></i>Zona Norte</span>
-                    <span><i class="fa-solid fa-map-marker"></i>Zona Sul</span>
-                    <span><i class="fa-solid fa-map-marker"></i>Zona Leste</span>
-                    <span><i class="fa-solid fa-map-marker"></i>Zona Oeste</span>
+                    <span><i class="fa-solid fa-map-marker"></i>BAHIA</span>
+                    <span><i class="fa-solid fa-map-marker"></i>CEARÁ</span>
+                    <span><i class="fa-solid fa-map-marker"></i>PERNAMBUCO</span>
+                    <span><i class="fa-solid fa-map-marker"></i>ALAGOAS</span>
+                    <span><i class="fa-solid fa-map-marker"></i>PARAÍBA</span>
                 </div>
             </div>
             <div class="containerFRight">
                 <form>
                     <h2 data-lang="checkAvailabilityTitle">Verificar disponibilidade</h2>
-                    <p data-lang="checkAvailabilityDesc">Digite seu CEP e veja se já temos cobertura ra sua região.</p> <label data-lang="labelCep">CEP</label> <input
-                        type="text" maxlength="9" placeholder="00000-000"> <label data-lang="labelCity">Cidade</label> <input type="text"
-                        maxlength="20" placeholder="Sua cidade"> <button data-lang="btnCheckCoverage">Verificar cobertura</button>
+                    <p data-lang="checkAvailabilityDesc">Digite seu CEP e veja se já temos cobertura ra sua região.</p>
+                    <label data-lang="labelCep">CEP</label> 
+                    <input type="text" maxlength="9" placeholder="00000-000">
+                    <label data-lang="labelCity">Cidade</label>
+                    <input type="text" maxlength="20" placeholder="Salvador">
+                    <button data-lang="btnCheckCoverage">
+                        Verificar cobertura
+                    </button>
                 </form>
             </div>
         </div>
@@ -318,8 +316,7 @@
                 <div class="contactLeft">
                     <span data-lang="contactSubtitle">fale com a gente</span>
                     <h2 data-lang="contactTitle">Assine agora ou tire suas dúvidas</h2>
-                    <p data-lang="contactText">Preencha o formulário ao lado ou fale direto pelo WhatsApp. Nossa equipe está pronta para te
-                        atender.</p>
+                    <p data-lang="contactText">Preencha o formulário ao lado ou fale direto pelo WhatsApp. Nossa equipe está pronta para te atender.</p>
                     <div class="contactBottom">
                         <div>
                             <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
@@ -338,18 +335,20 @@
                 <div class="contactRight">
                     <form>
                         <label data-lang="contactNameLabel">Nome completo</label>
-                        <input type="text" maxlength="30" placeholder="Seu nome">
+                        <input type="text" maxlength="30" placeholder="João Silva">
 
                         <label data-lang="contactEmailLabel">E-mail</label>
-                        <input type="email" placeholder="voce@gmail.com">
+                        <input type="email" placeholder="name@gmail.com">
 
                         <label data-lang="contactPhoneLabel">Telefone</label>
                         <input type="text" maxlength="12" placeholder="(00) 00000-0000">
 
                         <label data-lang="contactMessageLabel">Mensagem</label>
-                        <textarea placeholder="Conte um pouco sobre o que você precisa..."></textarea>
+                        <textarea placeholder="[. . .]"></textarea>
 
-                        <button data-lang="contactButton">Enviar mensagem</button>
+                        <button data-lang="contactButton">
+                            Enviar mensagem
+                        </button>
                     </form>
                 </div>
             </div>
@@ -357,7 +356,9 @@
             <div class="clientArea" id="clientArea">
                 <h2 data-lang="clientAreaTitle">Área do cliente</h2>
                 <p data-lang="clientAreaText">Acesse sua fatura, 2ª via, suporte e muito mais.</p>
-                <button data-lang="clientAreaButton">Entrar na área do cliente</button>
+                <button data-lang="clientAreaButton">
+                    Entrar na área do cliente
+                </button>
             </div>
     </main>
 
@@ -372,5 +373,4 @@
         <button id="btnTheme" class="btnTheme"><i class="fa-solid fa-moon"></i></button>
     </div>
 </body>
-
 </html>
