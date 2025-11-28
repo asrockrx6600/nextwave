@@ -1540,7 +1540,7 @@ footer div img {
         padding: 0 1rem;
         border: none;
         border-radius: 1rem;
-        font-size: 1rem;
+        font-size: .9rem;
         font-weight: bold;
         color: var(--colorBtn);
         background-color: var(--primary);

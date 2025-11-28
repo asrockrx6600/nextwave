@@ -107,7 +107,7 @@ const langData = {
         coverage: 'Coverage',
         doubts: 'Doubts',
         contact: 'Contact',
-        subscribe: 'Subscribe now',
+        subscribe: 'Subscribe',
         fibraOptica: '100% Optical Fiber to your home',
         internetUltra: 'Ultra-fast internet to connect everything in your home',
         planosAlta: 'High-speed plans with stability, 24-hour support and powerful Wi-Fi so you can play, watch and work without freezing',
