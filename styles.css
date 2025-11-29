@@ -23,6 +23,7 @@
         --inputBg: #ffffff;
         --inputBorder: #cfcfcf;
         --shadow: rgba(0, 0, 0, 0.1);
+        --confirm: #064930;
     }
 }
 
@@ -742,6 +743,7 @@ body {
     box-shadow: 0px 0px 5px var(--black);
     border-radius: 10px;
     height: 65vh;
+    position: relative;
 }
 
 .containerFRight h2 {
@@ -776,6 +778,19 @@ body {
 .containerFRight button:hover {
     background-color: var(--white);
     color: var(--primary);
+}
+
+.cepMsg span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 400ms ease-in-out;
+}
+
+.cepMsg span.active {
+    opacity: 1;
+    transition: opacity 400ms ease-in-out;
 }
 
 .faq {
@@ -965,7 +980,7 @@ body {
     position: absolute;
     top: 58vh;
     left: 28vh;
-    color: rgb(6, 73, 48);
+    color: var(--confirm);
     font-size: 1.5rem;
     font-weight: bold;
     z-index: 888;

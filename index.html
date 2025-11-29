@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google" content="notranslate">
 
     <link rel="shortcut icon" href="images/nextWaveLogo.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
@@ -12,6 +11,7 @@
     <script src="script.js" defer></script>
     <script src="language.js" defer></script>
     <script src="sendMessage.js" defer></script>
+    <script src="validarCEP.js" defer></script>
 
     <title>NextWave Internet</title>
 
@@ -279,12 +279,15 @@
                     <h2 data-lang="checkAvailabilityTitle">Verificar disponibilidade</h2>
                     <p data-lang="checkAvailabilityDesc">Digite seu CEP e veja se já temos cobertura ra sua região.</p>
                     <label data-lang="labelCep">CEP</label> 
-                    <input type="text" maxlength="9" placeholder="00000-000">
+                    <input type="text" maxlength="8" placeholder="00000-000" id="cepInput">
                     <label data-lang="labelCity">Cidade</label>
-                    <input type="text" maxlength="20" placeholder="Salvador">
-                    <button data-lang="btnCheckCoverage">
+                    <input type="text" maxlength="20" placeholder="Salvador" id="cityInput">
+                    <button type="submit" data-lang="btnCheckCoverage" id="btnVerify">
                         Verificar cobertura
                     </button>
+                    <div class="cepMsg">
+                        <span id="cepMsg"></span>
+                    </div>
                 </form>
             </div>
         </div>
