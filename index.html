@@ -12,6 +12,7 @@
     <script src="language.js" defer></script>
     <script src="sendMessage.js" defer></script>
     <script src="validateCep.js" defer></script>
+    <script src="planSimulator.js" defer></script>
 
     <title>NextWave Internet</title>
 
@@ -104,31 +105,35 @@
                     <h2 data-lang="simulePlano">Simule seu plano</h2>
                     <p data-lang="informeDados">Informe alguns dados e veja a melhor opção para você.</p>
 
-                    <div class="form">
+                    <div class="form" id="formPlans">
                         <label data-lang="twoCep">CEP</label>
                         <input type="text" maxlength="9" placeholder="00000-000">
 
                         <label data-lang="tipoUso">Tipo de uso</label>
-                        <select>
-                            <option data-lang="residencial" value="">Residencial</option>
-                            <option data-lang="homeOffice" value="">Trabalho / Home office</option>
-                            <option data-lang="gamer" value="">Gamer</option>
-                            <option data-lang="empresa" value="">Empresa</option>
+                        <select id="usageType">
+                            <option data-lang="selectUsage" value="selectUsage" hidden>Selecione</option>
+                            <option data-lang="residencial" value="residencial">Residencial</option>
+                            <option data-lang="gamer" value="gamer">Gamer</option>
+                            <option data-lang="empresa" value="work">Empresa</option>
                         </select>
 
                         <label data-lang="quantasPessoas">Quantas pessoas usam a internet?</label>
-                        <select>
-                            <option data-lang="umaDuasPessoas" value="">1 a 2 pessoas</option>
-                            <option data-lang="tresQuatroPessoas" value="">3 a 4 pessoas</option>
-                            <option data-lang="cincoOuMais" value="">5 ou mais pessoas</option>
+                        <select id="users">
+                            <option data-lang="selectUsers" value="selectUsers" hidden>Selecione</option>
+                            <option data-lang="umaDuasPessoas" value="1-2">1 a 2 pessoas</option>
+                            <option data-lang="tresQuatroPessoas" value="3-4">3 a 4 pessoas</option>
+                            <option data-lang="cincoOuMais" value="5">5 ou mais pessoas</option>
                         </select>
 
-                        <button data-lang="verRecomendacao" type="button" onclick="document.getElementById('plans').scrollIntoView({behavior: 'smooth', block: 'start'})" id="#modifyBorder">
+                        <button type="button" data-lang="verRecomendacao" id="submitPlan" scroll()>
                             Ver recomendação
                         </button>
                         <div class="security">
                             <i class="fa fa-lock" aria-hidden="true"></i>
                             <p data-lang="dadosSeguros">Seus dados estão seguros.</p>
+                        </div>
+                        <div class="planMsg">
+                            <span id="planMsg"></span>
                         </div>
                     </div>
                 </div>
@@ -144,7 +149,7 @@
 
             <div class="containerTwoGrid">
 
-                <div class="conTwoGrid">
+                <div class="conTwoGrid" id="firstPlan" class="firstPlan">
                     <span class="topPlans" data-lang="planEssential">Essencial</span>
                     <h3 data-lang="plan300">300 Mega</h3>
 
@@ -174,7 +179,7 @@
                     </button>
                 </div>
 
-                <div class="conTwoGrid" id="modifyBorder">
+                <div class="conTwoGrid" id="modifyBorder" class="modifyBorder">
                     <span class="topPlans modify" data-lang="recommended">Recomendado</span>
                     <h3 data-lang="plan500">500 Mega</h3>
 
@@ -206,7 +211,7 @@
                     <p class="obs" data-lang="obsCondition">*Consulte condições na sua região.</p>
                 </div>
 
-                <div class="conTwoGrid">
+                <div class="conTwoGrid" id="pro" class="pro">
                     <span class="topPlans" data-lang="planPower">Power</span>
                     <h3 data-lang="plan1000">1 Giga</h3>
 

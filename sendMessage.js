@@ -7,9 +7,6 @@ const btn = document.getElementById('btnSend')
 const number = '75981535154'
 
 
-
-
-
 btn.addEventListener('click', (e) => {
     e.preventDefault()
 

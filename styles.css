@@ -454,6 +454,22 @@ body {
     margin-top: .5rem;
 }
 
+.planMsg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.planMsg span {
+    opacity: 0;
+    transition: opacity 400ms ease-in-out;
+}
+
+.planMsg span.active {
+    opacity: 1;
+    transition: opacity 400ms ease-in-out;
+}
+
 .containerTwo {
     display: flex;
     justify-content: center;
@@ -1160,7 +1176,7 @@ footer {
         height: auto;
     }
 
-    .form label {
+    form label {
         display: flex;
         align-items: flex-start;
         padding-left: .5rem;
