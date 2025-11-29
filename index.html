@@ -275,13 +275,13 @@
                 </div>
             </div>
             <div class="containerFRight">
-                <form>
+                <form id="coverageForm">
                     <h2 data-lang="checkAvailabilityTitle">Verificar disponibilidade</h2>
                     <p data-lang="checkAvailabilityDesc">Digite seu CEP e veja se já temos cobertura ra sua região.</p>
                     <label data-lang="labelCep">CEP</label> 
-                    <input type="text" maxlength="8" placeholder="00000-000" id="cepInput">
+                    <input type="text" maxlength="8" placeholder="00000-000" id="cepInput" required>
                     <label data-lang="labelCity">Cidade</label>
-                    <input type="text" maxlength="20" placeholder="Salvador" id="cityInput">
+                    <input type="text" maxlength="20" placeholder="Salvador" id="cityInput" required>
                     <button type="submit" data-lang="btnCheckCoverage" id="btnVerify">
                         Verificar cobertura
                     </button>
