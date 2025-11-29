@@ -11,7 +11,7 @@
     <script src="script.js" defer></script>
     <script src="language.js" defer></script>
     <script src="sendMessage.js" defer></script>
-    <script src="validateCEP.js" defer></script>
+    <script src="validateCep.js" defer></script>
 
     <title>NextWave Internet</title>
 
@@ -279,9 +279,9 @@
                     <h2 data-lang="checkAvailabilityTitle">Verificar disponibilidade</h2>
                     <p data-lang="checkAvailabilityDesc">Digite seu CEP e veja se já temos cobertura ra sua região.</p>
                     <label data-lang="labelCep">CEP</label> 
-                    <input type="text" maxlength="8" placeholder="00000-000" id="cepInput" required>
+                    <input type="text" maxlength="8" placeholder="00000-000" id="cepInput">
                     <label data-lang="labelCity">Cidade</label>
-                    <input type="text" maxlength="20" placeholder="Salvador" id="cityInput" required>
+                    <input type="text" maxlength="20" placeholder="Salvador" id="cityInput">
                     <button type="submit" data-lang="btnCheckCoverage" id="btnVerify">
                         Verificar cobertura
                     </button>
@@ -339,23 +339,23 @@
                 <div class="contactRight">
                     <form id="form">
                         <label data-lang="contactNameLabel">Nome completo</label>
-                        <input type="text" maxlength="50" placeholder="João Silva" required id="name">
+                        <input type="text" maxlength="50" placeholder="João Silva" id="name">
 
                         <label data-lang="contactEmailLabel">E-mail</label>
-                        <input type="email" placeholder="name@gmail.com" required id="email">
+                        <input type="email" placeholder="name@gmail.com" id="email">
 
                         <label data-lang="contactPhoneLabel">Telefone</label>
-                        <input type="text" maxlength="12" placeholder="(00) 00000-0000">
+                        <input type="text" maxlength="12" placeholder="(00) 00000-0000" id="phone">
 
                         <label data-lang="contactMessageLabel">Mensagem</label>
                         <textarea placeholder="[. . .]" id="message"></textarea>
 
-                        <button type="submit" data-lang="contactButton" id="btnSend">
+                        <button data-lang="contactButton" id="btnSend">
                             Enviar mensagem
                         </button>
 
-                        <div class="sendMesage" id="msg">
-                            <span>Enviado!</span>
+                        <div class="message">
+                            <span id="msg"></span>
                         </div>
                     </form>
                 </div>
