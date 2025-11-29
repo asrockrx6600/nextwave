@@ -44,7 +44,7 @@ function validateCepCity(cep, city) {
     const cepMatch = coverage.some(r => numericCep >= r.min && numericCep <= r.max)
     const cityMatch = cities.includes(normalizedCity)
 
-    return cepMatch && cityMatch
+    return cepMatch || cityMatch
 }
 
 btnVerify.addEventListener('click', (e) => {
